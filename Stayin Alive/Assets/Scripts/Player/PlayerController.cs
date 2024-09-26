@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      
         float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSensitivityX * Time.deltaTime;
        
         cameraVerticalRotation = mouseY;
@@ -45,7 +45,20 @@ public class PlayerController : MonoBehaviour
         float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivityY * Time.deltaTime;
         transform.Rotate(Vector3.up * mouseX);
 
+        if (Input.GetKeyDown(KeyCode.RightAlt))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+           
+            Cursor.visible = false;
+        
+        }
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            
+            Cursor.visible = true;
 
+        }
         if (Input.GetKey(KeyCode.W))
         {
             if (Input.GetKey(KeyCode.LeftShift))

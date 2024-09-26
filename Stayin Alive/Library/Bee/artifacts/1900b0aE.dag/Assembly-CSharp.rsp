@@ -117,6 +117,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -324,10 +325,12 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
--r:"C:/Users/user/Documents/GitHub/Stayin Alive/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/user/Documents/GitHub/Stayin Alive/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
--r:"C:/Users/user/Documents/GitHub/Stayin Alive/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/Stayin Alive/Stayin Alive/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"D:/Stayin Alive/Stayin Alive/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"D:/Stayin Alive/Stayin Alive/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -356,7 +359,40 @@
 "Assets/Scripts/DayNightCycle/LightingManager.cs"
 "Assets/Scripts/DayNightCycle/LightingPreset.cs"
 "Assets/Scripts/Enemy/EnemyController.cs"
+"Assets/Scripts/Enemy/Target.cs"
+"Assets/Scripts/Gun/Gun.cs"
+"Assets/Scripts/Gun/GunSystem.cs"
+"Assets/Scripts/GunSystemOverhauled/GunData.cs"
+"Assets/Scripts/GunSystemOverhauled/GunMain.cs"
+"Assets/Scripts/GunSystemOverhauled/PlayerShoot.cs"
+"Assets/Scripts/GunSystemOverhauled/WeaponSway.cs"
+"Assets/Scripts/Interactor.cs"
+"Assets/Scripts/Interfaces/IDamagable.cs"
+"Assets/Scripts/Interfaces/IInteractable.cs"
+"Assets/Scripts/Inventory Scripts/ChestInventory.cs"
+"Assets/Scripts/Inventory Scripts/Inventory Slots.cs"
+"Assets/Scripts/Inventory Scripts/InventoryHolder.cs"
+"Assets/Scripts/Inventory Scripts/InventorySystem.cs"
+"Assets/Scripts/Inventory Scripts/MouseItemData.cs"
+"Assets/Scripts/Inventory Scripts/PlayerInventoryHolder.cs"
+"Assets/Scripts/Item Scripts/InventoryItemData.cs"
+"Assets/Scripts/Item Scripts/ItemDatabase.cs"
+"Assets/Scripts/Item Scripts/ItemPickup.cs"
 "Assets/Scripts/Player/PlayerController.cs"
+"Assets/Scripts/Player/PlayerHealth.cs"
+"Assets/Scripts/SaveLoad/ReadOnlyAttribute.cs"
+"Assets/Scripts/SaveLoad/SaveData.cs"
+"Assets/Scripts/SaveLoad/SaveGameManager.cs"
+"Assets/Scripts/SaveLoad/SaveLoad.cs"
+"Assets/Scripts/SaveLoad/SerializableDictionary.cs"
+"Assets/Scripts/SaveLoad/UniqueID.cs"
+"Assets/Scripts/UI Scripts/DynamicInventoryDisplay.cs"
+"Assets/Scripts/UI Scripts/InventoryDisplay.cs"
+"Assets/Scripts/UI Scripts/InventorySlots_UI.cs"
+"Assets/Scripts/UI Scripts/InventoryUIController.cs"
+"Assets/Scripts/UI Scripts/PauseMenu.cs"
+"Assets/Scripts/UI Scripts/StaticInventoryDisplay.cs"
+"Assets/Sight.cs"
 -langversion:9.0
 
 /deterministic
